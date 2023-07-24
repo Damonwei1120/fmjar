@@ -400,7 +400,8 @@ public class Live2Vod extends Spider {
             String name = "电视直播";
             if (split.length == 2) {
                 name = split[0];
-                description = "播放地址：" + split[1];
+                description = "Dwei观影提示：资源播放失败可切换不同线路或点击快速搜索其他站点观看，若线路存在广告请勿相信！！直播等资源更新随缘，简介：";
+                //description = "播放地址：" + split[1];
             }
             JSONObject vodInfo = new JSONObject()
                     .put("vod_id", ids.get(0))
